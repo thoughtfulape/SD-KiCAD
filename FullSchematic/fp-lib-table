@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "CustomFootprints")(type "KiCad")(uri "C:/Users/butle/Documents/Amplifier Schematic Collection/CombinedSchematic/CustomFootprints/CustomFootprints.pretty")(options "")(descr ""))
+)
