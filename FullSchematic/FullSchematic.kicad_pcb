@@ -7,6 +7,8 @@
   (paper "A4")
   (layers
     (0 "F.Cu" signal)
+    (1 "In1.Cu" signal)
+    (2 "In2.Cu" signal)
     (31 "B.Cu" signal)
     (32 "B.Adhes" user "B.Adhesive")
     (33 "F.Adhes" user "F.Adhesive")
@@ -38,6 +40,23 @@
   )
 
   (setup
+    (stackup
+      (layer "F.SilkS" (type "Top Silk Screen"))
+      (layer "F.Paste" (type "Top Solder Paste"))
+      (layer "F.Mask" (type "Top Solder Mask") (thickness 0.01))
+      (layer "F.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 1" (type "prepreg") (thickness 0.1) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "In1.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 2" (type "core") (thickness 1.24) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "In2.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 3" (type "prepreg") (thickness 0.1) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "B.Cu" (type "copper") (thickness 0.035))
+      (layer "B.Mask" (type "Bottom Solder Mask") (thickness 0.01))
+      (layer "B.Paste" (type "Bottom Solder Paste"))
+      (layer "B.SilkS" (type "Bottom Silk Screen"))
+      (copper_finish "None")
+      (dielectric_constraints no)
+    )
     (pad_to_mask_clearance 0)
     (pcbplotparams
       (layerselection 0x00010fc_ffffffff)
@@ -169,7 +188,7 @@
 
   (footprint "CustomFootprints:IPB009N03L" (layer "F.Cu")
     (tstamp 03502ea5-797f-4408-aba3-5bf87965df47)
-    (at 110.207 94.085)
+    (at 122.483 110.785)
     (property "MFG P/N" "IPB009N03L G")
     (property "SEL P/N" "487-0056")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -226,7 +245,7 @@
 
   (footprint "Resistor_SMD:R_1206_3216Metric" (layer "F.Cu")
     (tstamp 03bbcc9d-8d1f-4198-a575-8f9e152644c0)
-    (at 176.302 137.82)
+    (at 189.515 145.195)
     (descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW120610K0FKEA")
@@ -282,7 +301,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tstamp 05a2ce2b-bdd0-4236-ac42-219f00113214)
-    (at 209.342 130.12)
+    (at 222.555 137.495)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "RNCF0402BTE324R")
@@ -338,7 +357,7 @@
 
   (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
     (tstamp 07c3051d-4875-4715-8a4e-af75665b3343)
-    (at 193.192 138.76)
+    (at 206.405 146.135)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "RN731JTTD1001F25")
@@ -394,7 +413,7 @@
 
   (footprint "Resistor_SMD:R_1210_3225Metric" (layer "F.Cu")
     (tstamp 08e8b0c0-a9b8-48e0-b14b-c69e2cc94e26)
-    (at 142.602 98.59)
+    (at 154.878 115.29)
     (descr "Resistor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW121010R0FKEB")
@@ -450,7 +469,7 @@
 
   (footprint "CustomFootprints:AGP2923-103KL" (layer "F.Cu")
     (tstamp 0e8d04f8-deb4-426b-b98e-1323fa8ece3f)
-    (at 89.157 57.435)
+    (at 101.433 74.135)
     (property "MFG P/N" "AGP2923-103KL")
     (property "SEL P/N" "412-0099")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -507,7 +526,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp 1311919a-ad54-43ab-a86a-4bd308c19bab)
-    (at 154.122 137.12)
+    (at 167.335 144.495)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -563,7 +582,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp 13f06ef5-8287-42b4-815e-bfe3bb6d9ae7)
-    (at 149.672 134.11)
+    (at 162.885 141.485)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -619,7 +638,7 @@
 
   (footprint "CustomFootprints:IPB009N03L" (layer "F.Cu")
     (tstamp 1a9ab360-42a7-44ed-bf2c-81e7277a8611)
-    (at 110.207 54.485)
+    (at 122.483 71.185)
     (property "MFG P/N" "IPB009N03L G")
     (property "SEL P/N" "487-0056")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -676,7 +695,7 @@
 
   (footprint "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" (layer "F.Cu")
     (tstamp 1aee0aaa-03a3-403d-9dfd-eef94f760969)
-    (at 135.472 121.61)
+    (at 147.748 138.31)
     (descr "Test point with 2 pins, pitch 2.54mm, drill diameter 0.8mm")
     (tags "CONN DEV")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -736,7 +755,7 @@
 
   (footprint "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" (layer "F.Cu")
     (tstamp 1af23167-5cfb-4fbf-bbd0-0d6e8f4b9b41)
-    (at 135.472 108.21)
+    (at 147.748 124.91)
     (descr "Test point with 2 pins, pitch 2.54mm, drill diameter 0.8mm")
     (tags "CONN DEV")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -796,7 +815,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp 21cb4cf2-836d-4c9f-a9a7-7874c7aeae16)
-    (at 158.572 131.1)
+    (at 171.785 138.475)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -852,7 +871,7 @@
 
   (footprint "Capacitor_SMD:C_1206_3216Metric" (layer "F.Cu")
     (tstamp 23c4c739-d301-4e5d-a38f-57d3b91cb498)
-    (at 115.012 116.08)
+    (at 127.288 132.78)
     (descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "GRM31MR71C105KA01K")
@@ -908,7 +927,7 @@
 
   (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
     (tstamp 255c4b47-1546-42cb-b4a3-fa137c8cc32b)
-    (at 193.192 136.25)
+    (at 206.405 143.625)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "RN731JTTD1001F25")
@@ -964,7 +983,7 @@
 
   (footprint "Resistor_SMD:R_0201_0603Metric" (layer "F.Cu")
     (tstamp 258ab53d-4ec2-4f6f-b6c6-e0d29a16ac6e)
-    (at 210.272 140.31)
+    (at 223.485 147.685)
     (descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW060310K0FKEB")
@@ -1018,7 +1037,7 @@
 
   (footprint "Resistor_SMD:R_0201_0603Metric" (layer "F.Cu")
     (tstamp 262cb7ad-31d5-43ca-982a-0f554b42e449)
-    (at 208.172 104.44)
+    (at 221.385 111.815)
     (descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW060310K0FKEB")
@@ -1072,7 +1091,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp 274db9e2-5609-476e-9919-e8b9715af739)
-    (at 154.122 143.14)
+    (at 167.335 150.515)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -1128,7 +1147,7 @@
 
   (footprint "Resistor_SMD:R_0201_0603Metric" (layer "F.Cu")
     (tstamp 291b4d86-95e7-42d0-90df-bc3a89a75883)
-    (at 210.272 142.06)
+    (at 223.485 149.435)
     (descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW060310K0FKEB")
@@ -1182,7 +1201,7 @@
 
   (footprint "CustomFootprints:S_USB_006_M14.8x14.9" (layer "F.Cu")
     (tstamp 2c731248-ff6e-471d-8c38-e9d0bf89c629)
-    (at 170.067 117.415)
+    (at 183.28 124.79)
     (property "MFG P/N" "KUSBX-SMTAS1NB30TR")
     (property "SEL P/N" "420-0094")
     (property "Sheetfile" "FullSchematic.kicad_sch")
@@ -1227,7 +1246,7 @@
 
   (footprint "CustomFootprints:B32522C0335J000" (layer "F.Cu")
     (tstamp 2eafb344-6ba5-4c0a-8d7e-1c8ec2f710e9)
-    (at 132.807 51.935)
+    (at 145.083 68.635)
     (property "MGF P/N" "B32522C0335J000")
     (property "SEL P/N" "040-0612")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -1280,7 +1299,7 @@
 
   (footprint "CustomFootprints:LTC6240IS8TRMPBF" (layer "F.Cu")
     (tstamp 2fcb7cc0-fe13-4d78-870c-eb1bb2cfa499)
-    (at 207.9494 136.4986)
+    (at 221.1624 143.8736)
     (property "MFG P/N" "LTC6240IS8#TRMPBF")
     (property "SEL P/N" "151-0063")
     (property "Sheetfile" "HMI_CS.kicad_sch")
@@ -1386,7 +1405,7 @@
 
   (footprint "CustomFootprints:CALTEST_CT3151-2" (layer "F.Cu")
     (tstamp 31a863e5-8553-4626-a460-bbe47e4b70c7)
-    (at 170.022 76.44)
+    (at 183.235 83.815)
     (property "MFG P/N" "CT3151-2")
     (property "SEL P/N" "N/A")
     (property "Sheetfile" "FullSchematic.kicad_sch")
@@ -1469,7 +1488,7 @@
 
   (footprint "Package_DFN_QFN:DHVQFN-16-1EP_2.5x3.5mm_P0.5mm_EP1x2mm" (layer "F.Cu")
     (tstamp 36d8192a-fb8f-408e-9002-82f9601c11dc)
-    (at 186.772 129.46)
+    (at 199.985 136.835)
     (descr "DHVQFN, 16 Pin (JEDEC MO-241/VAB, https://assets.nexperia.com/documents/package-information/SOT763-1.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py")
     (tags "DHVQFN NoLead")
     (property "MFG P/N" "SN74LV595ARGYR")
@@ -1568,7 +1587,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp 3863d402-eab8-463e-bbc9-430f7aa8ef80)
-    (at 149.672 137.12)
+    (at 162.885 144.495)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -1624,7 +1643,7 @@
 
   (footprint "CustomFootprints:1-534237-4" (layer "F.Cu")
     (tstamp 3bd601a7-7fee-476b-ab40-2f4cf9449986)
-    (at 168.317 124.255)
+    (at 181.53 131.63)
     (property "MFG P/N" "1-534237-4")
     (property "SEL P/N" "090-0716")
     (property "Sheetfile" "HMI_LCD.kicad_sch")
@@ -1697,7 +1716,7 @@
 
   (footprint "CustomFootprints:SN74LVC2T45DCURE4" (layer "F.Cu")
     (tstamp 3e81c3b9-1a86-4f53-a2aa-4a7c1f90615c)
-    (at 170.872 135.71)
+    (at 184.085 143.085)
     (property "Description" "")
     (property "MFG P/N" "SN74LVC2T45DCURE4")
     (property "SEL P/N" "431-0746")
@@ -1759,7 +1778,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp 434a2576-6237-4191-b8a5-6b84bca15809)
-    (at 204.722 112.35)
+    (at 217.935 119.725)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -1815,7 +1834,7 @@
 
   (footprint "Resistor_SMD:R_0201_0603Metric" (layer "F.Cu")
     (tstamp 48435f24-bcf4-4b39-86eb-307ee5f0bc52)
-    (at 208.172 109.69)
+    (at 221.385 117.065)
     (descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW060310K0FKEB")
@@ -1869,7 +1888,7 @@
 
   (footprint "CustomFootprints:B32522C0335J000" (layer "F.Cu")
     (tstamp 4a3959f7-a31c-47d1-bc92-b4fded025004)
-    (at 132.807 68.135)
+    (at 145.083 84.835)
     (property "MGF P/N" "B32522C0335J000")
     (property "SEL P/N" "040-0612")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -1922,7 +1941,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp 4a988688-ac19-457a-a887-30282c2ab89a)
-    (at 158.572 128.09)
+    (at 171.785 135.465)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -1978,7 +1997,7 @@
 
   (footprint "Package_TO_SOT_SMD:SOT-23" (layer "F.Cu")
     (tstamp 4e18edee-01ec-4f57-af28-5ae6561a8d39)
-    (at 197.642 137.22)
+    (at 210.855 144.595)
     (descr "SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOT TO_SOT_SMD")
     (property "MFG P/N" "BSS138-7-F")
@@ -2042,7 +2061,7 @@
 
   (footprint "Package_TO_SOT_SMD:TSOT-23" (layer "F.Cu")
     (tstamp 4e81fe45-c0ca-4652-8750-50e3d24c7e08)
-    (at 170.692 143.41)
+    (at 183.905 150.785)
     (descr "3-pin TSOT23 package, http://www.analog.com.tw/pdf/All_In_One.pdf")
     (tags "TSOT-23")
     (property "MFG P/N" "MMBT2222A")
@@ -2106,7 +2125,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp 4eca5d5d-3294-4429-847f-c9d4df887fc7)
-    (at 149.672 128.09)
+    (at 162.885 135.465)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -2162,7 +2181,7 @@
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" (layer "F.Cu")
     (tstamp 500038bc-d49a-4863-bdf9-9d743f6fd103)
-    (at 149.772 104.14)
+    (at 162.985 111.515)
     (descr "Through hole straight pin header, 2x06, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x06 2.54mm double row")
     (property "MFG P/N" "HTSW-106-07-S-D")
@@ -2250,7 +2269,7 @@
 
   (footprint "Diode_SMD:D_SMC" (layer "F.Cu")
     (tstamp 547e6df7-f25c-4f59-ade1-7e977e321686)
-    (at 128.227 108.11)
+    (at 140.503 124.81)
     (descr "Diode SMC (DO-214AB)")
     (tags "Diode SMC (DO-214AB)")
     (property "MFG P/N" "MURS320T3G")
@@ -2320,7 +2339,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp 56bd3ec5-d080-4751-8330-e6078edaa157)
-    (at 154.122 131.1)
+    (at 167.335 138.475)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -2376,7 +2395,7 @@
 
   (footprint "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" (layer "F.Cu")
     (tstamp 5e84552f-62a1-400b-894a-d6431fec46be)
-    (at 135.472 101.51)
+    (at 147.748 118.21)
     (descr "Test point with 2 pins, pitch 2.54mm, drill diameter 0.8mm")
     (tags "CONN DEV")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -2436,7 +2455,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp 67623722-dfdf-4f26-bd99-3e087b92e68c)
-    (at 154.122 128.09)
+    (at 167.335 135.465)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -2492,7 +2511,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp 6ba4a29c-2397-4704-9671-81b712a4ed7f)
-    (at 154.122 140.13)
+    (at 167.335 147.505)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -2548,7 +2567,7 @@
 
   (footprint "CustomFootprints:IR2181" (layer "F.Cu")
     (tstamp 6e9279d9-a04c-4ec0-bc59-8568fe16a7c0)
-    (at 116.578421 104.31)
+    (at 128.854421 121.01)
     (property "MFG P/N" "IR2181STRPBF")
     (property "SEL P/N" "151-5568")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -2610,7 +2629,7 @@
 
   (footprint "CustomFootprints:SN74LVC2T45DCURE4" (layer "F.Cu")
     (tstamp 757b4247-d85f-49e3-b5df-3fdfbdde7b19)
-    (at 170.872 139.36)
+    (at 184.085 146.735)
     (property "Description" "")
     (property "MFG P/N" "SN74LVC2T45DCURE4")
     (property "SEL P/N" "431-0746")
@@ -2672,7 +2691,7 @@
 
   (footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" (layer "F.Cu")
     (tstamp 789a69eb-c7d2-4488-8679-bd8312285ff6)
-    (at 107.017241 104.61)
+    (at 119.293241 121.31)
     (descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor")
     (tags "CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor")
     (property "MFG P/N" "ELXZ350ETD101MF15D")
@@ -2990,7 +3009,7 @@
 
   (footprint "Package_TO_SOT_SMD:SOT-23" (layer "F.Cu")
     (tstamp 792db75a-17e8-4d10-85ec-9c60a7e841e3)
-    (at 209.392 112.79)
+    (at 222.605 120.165)
     (descr "SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOT TO_SOT_SMD")
     (property "MFG P/N" "BSS138-7-F")
@@ -3054,7 +3073,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp 799bb050-6fba-4fda-9655-a42d5c48e6b5)
-    (at 204.722 109.34)
+    (at 217.935 116.715)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -3110,7 +3129,7 @@
 
   (footprint "CustomFootprints:CALTEST_CT3151-2" (layer "F.Cu")
     (tstamp 7d1c2342-f63b-4fa3-b997-2f66446a2c9e)
-    (at 200.122 76.44)
+    (at 213.335 83.815)
     (property "MFG P/N" "CT3151-2")
     (property "SEL P/N" "N/A")
     (property "Sheetfile" "FullSchematic.kicad_sch")
@@ -3193,7 +3212,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp 81ab3cb8-0004-4593-ab6d-7c53eb44bb18)
-    (at 154.122 134.11)
+    (at 167.335 141.485)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -3249,7 +3268,7 @@
 
   (footprint "CustomFootprints:MCA1101-20-5" (layer "F.Cu")
     (tstamp 81c1f179-5ab4-43b2-8539-d1f0d9c9f3bd)
-    (at 197.312 127.49)
+    (at 210.525 134.865)
     (property "MFG P/N" "MCA1101-20-5")
     (property "SEL P/N" "431-1300")
     (property "Sheetfile" "HMI_CS.kicad_sch")
@@ -3355,7 +3374,7 @@
 
   (footprint "Resistor_SMD:R_0201_0603Metric" (layer "F.Cu")
     (tstamp 837d36a0-2879-4e72-9620-efbcb4c73e26)
-    (at 208.172 107.94)
+    (at 221.385 115.315)
     (descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW060310K0FKEB")
@@ -3409,7 +3428,7 @@
 
   (footprint "CustomFootprints:B32522C0335J000" (layer "F.Cu")
     (tstamp 848f3c08-580e-465d-8df9-d5ac955419e7)
-    (at 132.807 92.435)
+    (at 145.083 109.135)
     (property "MGF P/N" "B32522C0335J000")
     (property "SEL P/N" "040-0612")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -3462,7 +3481,7 @@
 
   (footprint "CustomFootprints:AGP2923-103KL" (layer "F.Cu")
     (tstamp 87fd6651-4eb8-4557-9e27-f2ad75a1c318)
-    (at 89.157 114.735)
+    (at 101.433 131.435)
     (property "MFG P/N" "AGP2923-103KL")
     (property "SEL P/N" "412-0099")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -3519,7 +3538,7 @@
 
   (footprint "Resistor_SMD:R_1206_3216Metric" (layer "F.Cu")
     (tstamp 89a6649f-d995-40d6-a980-e3abc5bea79a)
-    (at 198.002 141.09)
+    (at 211.215 148.465)
     (descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "RK73H2BTTD2002F")
@@ -3575,7 +3594,7 @@
 
   (footprint "Diode_SMD:D_SMC" (layer "F.Cu")
     (tstamp 8ad01bb4-d982-4d6a-8e30-bad3f81e5744)
-    (at 128.227 100.36)
+    (at 140.503 117.06)
     (descr "Diode SMC (DO-214AB)")
     (tags "Diode SMC (DO-214AB)")
     (property "MFG P/N" "MURS320T3G")
@@ -3645,7 +3664,7 @@
 
   (footprint "CustomFootprints:SN74LVC2T45DCURE4" (layer "F.Cu")
     (tstamp 8dde26c6-42a9-4675-9d9f-c6b93953d8f6)
-    (at 170.872 132.06)
+    (at 184.085 139.435)
     (property "Description" "")
     (property "MFG P/N" "SN74LVC2T45DCURE4")
     (property "SEL P/N" "431-0746")
@@ -3707,7 +3726,7 @@
 
   (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
     (tstamp 8e1ba0c2-6dd2-47c1-b1e0-7fc494e25cdc)
-    (at 186.902 140.39)
+    (at 200.115 147.765)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "RN731JTTED1001B25")
@@ -3763,7 +3782,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp 8ee76a6f-d1a4-4ff7-b747-8c14c8e67172)
-    (at 149.672 140.13)
+    (at 162.885 147.505)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -3819,7 +3838,7 @@
 
   (footprint "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" (layer "F.Cu")
     (tstamp 8f85d109-81b0-4306-9f83-aa25c8fc423d)
-    (at 135.472 114.91)
+    (at 147.748 131.61)
     (descr "Test point with 2 pins, pitch 2.54mm, drill diameter 0.8mm")
     (tags "CONN DEV")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -3879,7 +3898,7 @@
 
   (footprint "CustomFootprints:CALTEST_CT3151-2" (layer "F.Cu")
     (tstamp 8fa5767f-b335-4834-b29e-e0ab775eb9db)
-    (at 185.072 76.44)
+    (at 198.285 83.815)
     (property "MFG P/N" "CT3151-2")
     (property "SEL P/N" "N/A")
     (property "Sheetfile" "FullSchematic.kicad_sch")
@@ -3962,7 +3981,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tstamp 90f9f88a-4c05-4be6-80b4-c083c5aba131)
-    (at 209.342 128.13)
+    (at 222.555 135.505)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW04023K74FKED")
@@ -4018,7 +4037,7 @@
 
   (footprint "CustomFootprints:IR2181" (layer "F.Cu")
     (tstamp 91b82a26-bc67-4f10-8599-3ff414687d56)
-    (at 116.578421 111.17)
+    (at 128.854421 127.87)
     (property "MFG P/N" "IR2181STRPBF")
     (property "SEL P/N" "151-5568")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -4080,7 +4099,7 @@
 
   (footprint "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" (layer "F.Cu")
     (tstamp 923fbbc4-fcf8-4849-8796-ca0474978151)
-    (at 135.472 118.26)
+    (at 147.748 134.96)
     (descr "Test point with 2 pins, pitch 2.54mm, drill diameter 0.8mm")
     (tags "CONN DEV")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -4140,7 +4159,7 @@
 
   (footprint "CustomFootprints:221AMC16R" (layer "F.Cu")
     (tstamp 924be454-a147-469a-8ebe-12f68baa4c3c)
-    (at 186.6894 107.5982)
+    (at 199.9024 114.9732)
     (tags "221AMC10R ")
     (property "MFG P/N" "221AMC16R")
     (property "SEL P/N" "482-0044")
@@ -4235,7 +4254,7 @@
 
   (footprint "Resistor_SMD:R_0201_0603Metric" (layer "F.Cu")
     (tstamp 94b99a41-6fa2-4ee8-a6e0-a79291607748)
-    (at 186.122 142.52)
+    (at 199.335 149.895)
     (descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW060310K0FKEB")
@@ -4289,7 +4308,7 @@
 
   (footprint "CustomFootprints:B32522C0335J000" (layer "F.Cu")
     (tstamp 962621e5-37a0-4799-8fcc-01b9960a9ca0)
-    (at 132.807 76.235)
+    (at 145.083 92.935)
     (property "MGF P/N" "B32522C0335J000")
     (property "SEL P/N" "040-0612")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -4342,7 +4361,7 @@
 
   (footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" (layer "F.Cu")
     (tstamp 96ebd5f2-6ca0-4794-8900-69d05bdb31a6)
-    (at 107.017241 112.46)
+    (at 119.293241 129.16)
     (descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor")
     (tags "CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor")
     (property "MFG P/N" "ELXZ350ETD101MF15D")
@@ -4660,7 +4679,7 @@
 
   (footprint "Resistor_SMD:R_1206_3216Metric" (layer "F.Cu")
     (tstamp 97178f2e-200b-4c5c-9825-975614d49424)
-    (at 176.302 134.53)
+    (at 189.515 141.905)
     (descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW12063K01FKEB")
@@ -4716,7 +4735,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp 985dc315-7275-432a-8c29-9e656eb7c735)
-    (at 158.572 134.11)
+    (at 171.785 141.485)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -4772,7 +4791,7 @@
 
   (footprint "CustomFootprints:3386W-1-102RLF" (layer "F.Cu")
     (tstamp 9c704d6b-71c5-49bb-ad8a-b02950265d7c)
-    (at 178.947 129.735)
+    (at 192.16 137.11)
     (property "MFG P/N" "3386W-1-102RLF")
     (property "SEL P/N" "260-0860")
     (property "Sheetfile" "HMI_LCD.kicad_sch")
@@ -4839,7 +4858,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tstamp 9d6c41eb-3947-4fb3-8ceb-a73e06fb6be9)
-    (at 209.342 126.14)
+    (at 222.555 133.515)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW04023K74FKED")
@@ -4895,7 +4914,7 @@
 
   (footprint "CustomFootprints:SN74LVC2T45DCURE4" (layer "F.Cu")
     (tstamp a5f01290-adc2-4992-82d7-2986bac3d35c)
-    (at 170.872 128.41)
+    (at 184.085 135.785)
     (property "MFG P/N" "SN74LVC2T45DCURE4")
     (property "SEL P/N" "431-0746")
     (property "Sheetfile" "HMI_LCD.kicad_sch")
@@ -4956,7 +4975,7 @@
 
   (footprint "Resistor_SMD:R_1206_3216Metric" (layer "F.Cu")
     (tstamp ac6d6404-581c-4157-b95b-b34239076109)
-    (at 176.302 141.11)
+    (at 189.515 148.485)
     (descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW120610K0FKEA")
@@ -5012,7 +5031,7 @@
 
   (footprint "CustomFootprints:B32522C0335J000" (layer "F.Cu")
     (tstamp ad9f951c-f1fe-438f-8df8-e43826956048)
-    (at 132.807 84.335)
+    (at 145.083 101.035)
     (property "MGF P/N" "B32522C0335J000")
     (property "SEL P/N" "040-0612")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -5065,7 +5084,7 @@
 
   (footprint "CustomFootprints:L79L05ABD13TR" (layer "F.Cu")
     (tstamp b143aa3f-e2bb-49fc-b926-b3cd1a29ede5)
-    (at 183.548421 136.01)
+    (at 196.761421 143.385)
     (property "MFG P/N" "L79L05ABD13TR")
     (property "SEL P/N" "151-3510")
     (property "Sheetfile" "HMI_LCD.kicad_sch")
@@ -5126,7 +5145,7 @@
 
   (footprint "Resistor_SMD:R_1210_3225Metric" (layer "F.Cu")
     (tstamp b2ddf3ce-e54e-4309-b672-6776c12d7fb9)
-    (at 142.602 107.01)
+    (at 154.878 123.71)
     (descr "Resistor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW121010R0FKEB")
@@ -5182,7 +5201,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp b68a5aa3-163f-4858-869b-17424cd0d321)
-    (at 205.662 128.69)
+    (at 218.875 136.065)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -5238,7 +5257,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp b7bbf6a0-d9c0-4fdc-b848-3bae9c0deded)
-    (at 205.662 125.68)
+    (at 218.875 133.055)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -5294,7 +5313,7 @@
 
   (footprint "CustomFootprints:AGP2923-103KL" (layer "F.Cu")
     (tstamp bab0c46d-c1ab-4ea2-904d-786d7d523690)
-    (at 89.157 95.635)
+    (at 101.433 112.335)
     (property "MFG P/N" "AGP2923-103KL")
     (property "SEL P/N" "412-0099")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -5351,7 +5370,7 @@
 
   (footprint "Resistor_SMD:R_1210_3225Metric" (layer "F.Cu")
     (tstamp bd4c13b8-22b6-4c5e-99f6-838591d6cdfa)
-    (at 206.242 141.54)
+    (at 219.455 148.915)
     (descr "Resistor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW12103K30FKEB")
@@ -5407,7 +5426,7 @@
 
   (footprint "Capacitor_SMD:C_1210_3225Metric" (layer "F.Cu")
     (tstamp bd67589b-806d-4e1d-843b-c5b0b8f70372)
-    (at 142.622 119.7)
+    (at 154.898 136.4)
     (descr "Capacitor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "12101C474KAT2A")
@@ -5463,7 +5482,7 @@
 
   (footprint "CustomFootprints:CON_39291247" (layer "F.Cu")
     (tstamp bd86ba8f-4d22-4c74-bdb7-60dabc31339a)
-    (at 203.180416 56.1185)
+    (at 216.393416 63.4935)
     (tags "39291247 ")
     (property "MFG P/N" "39291247")
     (property "SEL P/N" "N/A")
@@ -5614,7 +5633,7 @@
 
   (footprint "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" (layer "F.Cu")
     (tstamp be1858de-d3fe-46ad-ac3b-7fdd99fd3396)
-    (at 135.472 104.86)
+    (at 147.748 121.56)
     (descr "Test point with 2 pins, pitch 2.54mm, drill diameter 0.8mm")
     (tags "CONN DEV")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -5674,7 +5693,7 @@
 
   (footprint "CustomFootprints:AGP2923-103KL" (layer "F.Cu")
     (tstamp be4c69f8-707e-40bc-9fd5-ab832d6e32d6)
-    (at 89.157 76.535)
+    (at 101.433 93.235)
     (property "MFG P/N" "AGP2923-103KL")
     (property "SEL P/N" "412-0099")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -5731,7 +5750,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp c284910c-fe78-485f-a51d-5dffaaf8785b)
-    (at 204.722 103.32)
+    (at 217.935 110.695)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -5787,7 +5806,7 @@
 
   (footprint "Capacitor_SMD:C_1206_3216Metric" (layer "F.Cu")
     (tstamp c3f2a516-7129-4af2-87bf-c7aefe113504)
-    (at 115.012 119.43)
+    (at 127.288 136.13)
     (descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "GRM31MR71C105KA01K")
@@ -5843,7 +5862,7 @@
 
   (footprint "Capacitor_SMD:C_1210_3225Metric" (layer "F.Cu")
     (tstamp c6c4d886-fffd-450e-a1d8-231a88d4a8ee)
-    (at 142.622 115.45)
+    (at 154.898 132.15)
     (descr "Capacitor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "12101C474KAT2A")
@@ -5899,7 +5918,7 @@
 
   (footprint "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" (layer "F.Cu")
     (tstamp c9312044-a99d-40ed-aef5-ee65905f7708)
-    (at 135.472 111.56)
+    (at 147.748 128.26)
     (descr "Test point with 2 pins, pitch 2.54mm, drill diameter 0.8mm")
     (tags "CONN DEV")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -5959,7 +5978,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp ca0c7376-dd51-4b07-a0f5-879335c4a437)
-    (at 149.672 131.1)
+    (at 162.885 138.475)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -6015,7 +6034,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tstamp ca49bdc1-17ef-4bd4-945c-12ffcb8804a7)
-    (at 209.342 124.15)
+    (at 222.555 131.525)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "RNCF0402BTE324R")
@@ -6071,7 +6090,7 @@
 
   (footprint "CustomFootprints:B32522C0335J000" (layer "F.Cu")
     (tstamp ca6f56aa-e2ea-4cfe-9284-badba0469f82)
-    (at 132.807 60.035)
+    (at 145.083 76.735)
     (property "MGF P/N" "B32522C0335J000")
     (property "SEL P/N" "040-0612")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -6124,7 +6143,7 @@
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" (layer "F.Cu")
     (tstamp d61f81c4-3ae1-4b08-9326-810a23e9dd76)
-    (at 156.972 104.14)
+    (at 170.185 111.515)
     (descr "Through hole straight pin header, 2x06, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x06 2.54mm double row")
     (property "MFG P/N" "HTSW-106-07-S-D")
@@ -6212,7 +6231,7 @@
 
   (footprint "Resistor_SMD:R_0201_0603Metric" (layer "F.Cu")
     (tstamp dc0e8038-2768-40ee-ae1d-60ac19bb1ffc)
-    (at 208.172 106.19)
+    (at 221.385 113.565)
     (descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW060310K0FKEB")
@@ -6266,7 +6285,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp dde247e2-a7b6-4989-80a3-3cb023a05253)
-    (at 205.662 131.7)
+    (at 218.875 139.075)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -6322,7 +6341,7 @@
 
   (footprint "CustomFootprints:CALTEST_CT3151-2" (layer "F.Cu")
     (tstamp e000eb18-c3d8-4f17-8e58-d091c24a3b95)
-    (at 154.972 76.44)
+    (at 168.185 83.815)
     (property "MFG P/N" "CT3151-2")
     (property "SEL P/N" "N/A")
     (property "Sheetfile" "FullSchematic.kicad_sch")
@@ -6405,7 +6424,7 @@
 
   (footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" (layer "F.Cu")
     (tstamp e2b6178b-6af5-42a6-9ec2-982cd9708322)
-    (at 197.327241 113.59)
+    (at 210.540241 120.965)
     (descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor")
     (tags "CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor")
     (property "MFG P/N" "ELXZ350ETD101MF15D")
@@ -6723,7 +6742,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp e531629c-31d4-4aa4-aac9-4868f6bd6956)
-    (at 204.722 106.33)
+    (at 217.935 113.705)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -6779,7 +6798,7 @@
 
   (footprint "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" (layer "F.Cu")
     (tstamp e94bf47b-67b5-41c0-95d0-598237fe1743)
-    (at 135.472 98.16)
+    (at 147.748 114.86)
     (descr "Test point with 2 pins, pitch 2.54mm, drill diameter 0.8mm")
     (tags "CONN DEV")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -6839,7 +6858,7 @@
 
   (footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" (layer "F.Cu")
     (tstamp ed3c8259-b77b-41cd-9aa7-b90b3bcbbb3d)
-    (at 197.327241 105.74)
+    (at 210.540241 113.115)
     (descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor")
     (tags "CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor")
     (property "MFG P/N" "ELXZ350ETD101MF15D")
@@ -7157,7 +7176,7 @@
 
   (footprint "Resistor_SMD:R_1210_3225Metric" (layer "F.Cu")
     (tstamp ed3e9943-56e4-4b41-b95f-d0d5861d1f3e)
-    (at 142.602 111.22)
+    (at 154.878 127.92)
     (descr "Resistor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW121010R0FKEB")
@@ -7213,7 +7232,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tstamp f08af8e8-9e29-4e62-a07b-ecd8aa2599a3)
-    (at 209.342 122.16)
+    (at 222.555 129.535)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW040233K0FKED")
@@ -7269,7 +7288,7 @@
 
   (footprint "Resistor_SMD:R_0201_0603Metric" (layer "F.Cu")
     (tstamp f2367137-2b68-4037-be8c-4676c0b78fec)
-    (at 208.172 102.69)
+    (at 221.385 110.065)
     (descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW060310K0FKEB")
@@ -7323,7 +7342,7 @@
 
   (footprint "Resistor_SMD:R_1210_3225Metric" (layer "F.Cu")
     (tstamp f33876f8-e5e7-497c-819f-f6f922ce78e2)
-    (at 142.602 102.8)
+    (at 154.878 119.5)
     (descr "Resistor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MFG P/N" "CRCW121010R0FKEB")
@@ -7379,7 +7398,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp f867c354-6f4b-4041-9e94-298f93575ed5)
-    (at 149.672 143.14)
+    (at 162.885 150.515)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -7435,7 +7454,7 @@
 
   (footprint "CustomFootprints:IPB009N03L" (layer "F.Cu")
     (tstamp fdad5a55-10ca-4ad2-ba02-91d3bc0847b5)
-    (at 110.207 67.685)
+    (at 122.483 84.385)
     (property "MFG P/N" "IPB009N03L G")
     (property "SEL P/N" "487-0056")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -7492,7 +7511,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tstamp fddc5950-832d-429a-9713-f9b49d873ee9)
-    (at 205.662 122.67)
+    (at 218.875 130.045)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "MFG P/N" "C0805C103F5GACTU")
@@ -7548,7 +7567,7 @@
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" (layer "F.Cu")
     (tstamp ff2d275a-6286-41dc-971f-c46be1f766f7)
-    (at 163.122 128.91)
+    (at 176.335 136.285)
     (descr "Through hole straight pin header, 2x06, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x06 2.54mm double row")
     (property "MFG P/N" "HTSW-106-07-S-D")
@@ -7636,7 +7655,7 @@
 
   (footprint "CustomFootprints:IPB009N03L" (layer "F.Cu")
     (tstamp ffb92744-75ae-460f-91c5-56c575c98694)
-    (at 110.207 80.885)
+    (at 122.483 97.585)
     (property "MFG P/N" "IPB009N03L G")
     (property "SEL P/N" "487-0056")
     (property "Sheetfile" "AmplifierSchematic_20230805.kicad_sch")
@@ -7693,7 +7712,7 @@
 
   (footprint "Diode_SMD:D_SOD-123" (layer "F.Cu")
     (tstamp ffbba5f5-60ce-46f7-a18f-bf6bf62e106a)
-    (at 182.027 140.81)
+    (at 195.24 148.185)
     (descr "SOD-123")
     (tags "SOD-123")
     (property "MFG P/N" "SZMMSZ4679T1G")

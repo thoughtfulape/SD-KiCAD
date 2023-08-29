@@ -2694,11 +2694,11 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 976eea45-5bdb-466d-ab32-556c9920f027))
-    (pin "3" (uuid 9a236909-0677-4de3-a2a9-5bf02e873913))
     (pin "4" (uuid 5be055a1-57a2-4574-9c4e-a456732d504e))
-    (pin "6" (uuid c0c9047b-2431-495d-aa95-32ae0fca8635))
     (pin "2" (uuid 04459599-d904-4278-b8c2-f19d262f3a29))
+    (pin "3" (uuid 9a236909-0677-4de3-a2a9-5bf02e873913))
     (pin "5" (uuid 77275bbb-c6b7-4e73-b7ae-60a0f5e5c2eb))
+    (pin "6" (uuid c0c9047b-2431-495d-aa95-32ae0fca8635))
     (instances
       (project "FullSchematic"
         (path "/650f0e66-3493-4c97-9577-99f99fcd23df"
@@ -3441,6 +3441,10 @@
     (property "MFG P/N" "HTSW-106-07-S-D" (at 195.326 38.608 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (pin "1" (uuid 5648316e-3839-4390-afcb-ccdfd27d4fc0))
+    (pin "10" (uuid ea80fba7-e14e-461f-920d-5ca4274e3932))
+    (pin "11" (uuid 06abd8f9-a465-48ee-94b0-79f47da4e4fc))
+    (pin "12" (uuid 16308be7-9ccf-49ec-a4d1-6605e5c24a39))
     (pin "2" (uuid 7fb558c2-b4c0-466b-9c85-86ba81106c7e))
     (pin "3" (uuid 33e86e73-7611-4c7b-a9ff-4165879a5744))
     (pin "4" (uuid cf9db474-9881-40a0-b2be-923d1cb7397b))
@@ -3449,10 +3453,6 @@
     (pin "7" (uuid 00f584bd-e0f4-411a-9ae0-abee81ab41fb))
     (pin "8" (uuid 98a8ec6e-072b-4238-afe7-3cd02f560d1f))
     (pin "9" (uuid d8aa7873-c447-46d2-8e37-df006b105c04))
-    (pin "1" (uuid 5648316e-3839-4390-afcb-ccdfd27d4fc0))
-    (pin "10" (uuid ea80fba7-e14e-461f-920d-5ca4274e3932))
-    (pin "11" (uuid 06abd8f9-a465-48ee-94b0-79f47da4e4fc))
-    (pin "12" (uuid 16308be7-9ccf-49ec-a4d1-6605e5c24a39))
     (instances
       (project "FullSchematic"
         (path "/650f0e66-3493-4c97-9577-99f99fcd23df"
