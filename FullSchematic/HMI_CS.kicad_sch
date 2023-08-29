@@ -1320,46 +1320,6 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 93.218 37.846 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 5c212309-4e5e-4b30-85c7-d74cbf45b668)
-    (property "Reference" "R10" (at 91.186 36.576 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "10k" (at 91.186 39.116 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 94.996 37.846 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 93.218 37.846 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "SEL P/N" "255-1002" (at 93.218 37.846 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MFG P/N" "CRCW120610K0FKEA" (at 93.218 37.846 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a6d6c3ec-6464-453f-9aef-de1753c637d4))
-    (pin "2" (uuid f2368480-fd50-4b11-98fd-4e25a20139ba))
-    (instances
-      (project "FullSchematic"
-        (path "/650f0e66-3493-4c97-9577-99f99fcd23df/3542ca37-4624-4740-af78-19651a951512"
-          (reference "R10") (unit 1)
-        )
-      )
-      (project "Senior Design HMI Schematic R2 20230722_MB"
-        (path "/8c847d65-180e-4b65-a3db-30ced04c6f38"
-          (reference "R25") (unit 1)
-        )
-        (path "/8c847d65-180e-4b65-a3db-30ced04c6f38/74cc473d-d4c1-4a03-a7be-fcad9d3b3420"
-          (reference "R9") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R") (at 105.664 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5e722802-1fc0-40b2-a384-624739e9eb4c)
@@ -1522,6 +1482,49 @@
         )
         (path "/8c847d65-180e-4b65-a3db-30ced04c6f38/74cc473d-d4c1-4a03-a7be-fcad9d3b3420"
           (reference "U1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 143.256 39.878 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 93ef0242-3632-48f6-aac2-a1bcfd5e3f35)
+    (property "Reference" "R2" (at 148.59 38.862 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10k" (at 148.336 41.148 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_0201_0603Metric" (at 145.034 39.878 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 143.256 39.878 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "SEL P/N" "252-1002" (at 143.256 39.878 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFG P/N" "CRCW060310K0FKEB" (at 143.256 39.878 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid df675ca9-d371-49e2-a253-5bb3c3c18ddf))
+    (pin "2" (uuid faeb7eb6-0159-462f-a79e-e6b1a7565728))
+    (instances
+      (project "FullSchematic"
+        (path "/650f0e66-3493-4c97-9577-99f99fcd23df"
+          (reference "R2") (unit 1)
+        )
+        (path "/650f0e66-3493-4c97-9577-99f99fcd23df/3542ca37-4624-4740-af78-19651a951512"
+          (reference "R13") (unit 1)
+        )
+      )
+      (project "Senior Design HMI Schematic R2 20230722_MB"
+        (path "/8c847d65-180e-4b65-a3db-30ced04c6f38"
+          (reference "R30") (unit 1)
+        )
+        (path "/8c847d65-180e-4b65-a3db-30ced04c6f38/2dcf8d52-10d8-44ca-a916-d85406e99c43"
+          (reference "R6") (unit 1)
         )
       )
     )
@@ -2007,46 +2010,6 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 143.256 39.878 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid eeefcdc4-38f1-49f5-94be-51ba158f9aa2)
-    (property "Reference" "R13" (at 145.542 39.116 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "10k" (at 145.288 41.148 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 141.478 39.878 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 143.256 39.878 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "SEL P/N" "255-1002" (at 143.256 39.878 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MFG P/N" "CRCW120610K0FKEA" (at 143.256 39.878 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5ca86d8e-dc58-47a4-9265-0f7b5651ad7a))
-    (pin "2" (uuid d65e67a0-ea7c-43fa-9c03-b3e094c15337))
-    (instances
-      (project "FullSchematic"
-        (path "/650f0e66-3493-4c97-9577-99f99fcd23df/3542ca37-4624-4740-af78-19651a951512"
-          (reference "R13") (unit 1)
-        )
-      )
-      (project "Senior Design HMI Schematic R2 20230722_MB"
-        (path "/8c847d65-180e-4b65-a3db-30ced04c6f38"
-          (reference "R18") (unit 1)
-        )
-        (path "/8c847d65-180e-4b65-a3db-30ced04c6f38/74cc473d-d4c1-4a03-a7be-fcad9d3b3420"
-          (reference "R12") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:+5V") (at 143.256 34.036 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f41c9691-6abd-41d0-b32a-91416397b6ee)
@@ -2075,6 +2038,49 @@
         )
         (path "/8c847d65-180e-4b65-a3db-30ced04c6f38/74cc473d-d4c1-4a03-a7be-fcad9d3b3420"
           (reference "#PWR020") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 93.218 37.846 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f62388ca-f4ed-4734-92a2-ec8dad24bd80)
+    (property "Reference" "R2" (at 98.552 36.83 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10k" (at 98.298 39.116 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_0201_0603Metric" (at 94.996 37.846 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 93.218 37.846 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "SEL P/N" "252-1002" (at 93.218 37.846 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFG P/N" "CRCW060310K0FKEB" (at 93.218 37.846 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e89da604-def8-4525-87f0-3be2adbb4045))
+    (pin "2" (uuid 2a333a21-60e2-4c74-8624-9b21a4a68a1c))
+    (instances
+      (project "FullSchematic"
+        (path "/650f0e66-3493-4c97-9577-99f99fcd23df"
+          (reference "R2") (unit 1)
+        )
+        (path "/650f0e66-3493-4c97-9577-99f99fcd23df/3542ca37-4624-4740-af78-19651a951512"
+          (reference "R10") (unit 1)
+        )
+      )
+      (project "Senior Design HMI Schematic R2 20230722_MB"
+        (path "/8c847d65-180e-4b65-a3db-30ced04c6f38"
+          (reference "R30") (unit 1)
+        )
+        (path "/8c847d65-180e-4b65-a3db-30ced04c6f38/2dcf8d52-10d8-44ca-a916-d85406e99c43"
+          (reference "R6") (unit 1)
         )
       )
     )
