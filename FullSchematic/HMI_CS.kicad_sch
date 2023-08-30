@@ -1119,16 +1119,16 @@
     (property "Value" "33k" (at 107.696 36.068 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 103.886 34.798 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 103.886 34.798 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 105.664 34.798 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "SEL P/N" "463-33K0" (at 105.664 34.798 0)
+    (property "SEL P/N" "462-33K0 " (at 105.664 34.798 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "MFG P/N" "CRCW040233K0FKED" (at 105.664 34.798 0)
+    (property "MFG P/N" "RMCF0603JT33K0" (at 105.664 34.798 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3ea0cf61-8cd1-4d5d-bd9b-165a5ecc6bbd))
@@ -1136,6 +1136,9 @@
     (instances
       (project "FullSchematic"
         (path "/650f0e66-3493-4c97-9577-99f99fcd23df/3542ca37-4624-4740-af78-19651a951512"
+          (reference "R11") (unit 1)
+        )
+        (path "/650f0e66-3493-4c97-9577-99f99fcd23df"
           (reference "R11") (unit 1)
         )
       )
