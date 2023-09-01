@@ -2501,49 +2501,6 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 105.664 34.798 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 330740a5-9821-4bd0-97f7-6b9de29277b7)
-    (property "Reference" "R11" (at 107.696 33.528 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "33k" (at 107.696 36.068 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 103.886 34.798 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 105.664 34.798 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "SEL P/N" "462-33K0 " (at 105.664 34.798 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MFG P/N" "RMCF0603JT33K0" (at 105.664 34.798 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3ea0cf61-8cd1-4d5d-bd9b-165a5ecc6bbd))
-    (pin "2" (uuid 726858f3-b1df-42e9-b522-8f62f61ed13e))
-    (instances
-      (project "FullSchematic"
-        (path "/650f0e66-3493-4c97-9577-99f99fcd23df/3542ca37-4624-4740-af78-19651a951512"
-          (reference "R11") (unit 1)
-        )
-        (path "/650f0e66-3493-4c97-9577-99f99fcd23df"
-          (reference "R11") (unit 1)
-        )
-      )
-      (project "Senior Design HMI Schematic R2 20230722_MB"
-        (path "/8c847d65-180e-4b65-a3db-30ced04c6f38"
-          (reference "R19") (unit 1)
-        )
-        (path "/8c847d65-180e-4b65-a3db-30ced04c6f38/74cc473d-d4c1-4a03-a7be-fcad9d3b3420"
-          (reference "R10") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 233.172 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 37c0858d-dcdd-4b9a-bb8f-b09e88cf95b9)

@@ -1,4 +1,4 @@
 (fp_lib_table
   (version 7)
-  (lib (name "CustomFootprints")(type "KiCad")(uri "E:/SeniorDesign_PCB/SD-KiCAD/ExportFootprints_20230821/ExportFootprints/CustomFootprints.pretty")(options "")(descr ""))
+  (lib (name "CustomFootprints")(type "KiCad")(uri "C:/Users/butle/Documents/SchematicRepository/SD-KiCAD/ExportFootprints_20230821/ExportFootprints/CustomFootprints.pretty")(options "")(descr ""))
 )
