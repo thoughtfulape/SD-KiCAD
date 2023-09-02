@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 1,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [
@@ -16,9 +16,9 @@
       "Net-(SW1-4)",
       "Net-(C6-Pad1)",
       "+12V",
-      "Net-(D1-K)",
+      "Net-(#FLG07-pwr)",
       "Net-(U1-VS)",
-      "Net-(D2-K)",
+      "Net-(#FLG06-pwr)",
       "Net-(U2-VS)",
       "AMP_OUT",
       "OCTA_IN",
@@ -26,7 +26,7 @@
       "Net-(C20-Pad2)",
       "Net-(U8-+IN)",
       "-5V",
-      "Net-(D3-A)",
+      "Net-(#FLG08-pwr)",
       "unconnected-(J1-D--Pad2)",
       "unconnected-(J1-D+-Pad3)",
       "PWR_OK",
