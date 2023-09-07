@@ -4302,7 +4302,7 @@
     (property "Value" "2x6 Pin Header" (at 117.348 28.956 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" (at 118.0592 51.816 0)
+    (property "Footprint" "CustomFootprints:PMOD" (at 118.0592 51.816 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "" (at 117.348 41.656 0)

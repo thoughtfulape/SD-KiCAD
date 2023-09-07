@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 44,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [
@@ -16,9 +16,9 @@
       "Net-(SW1-4)",
       "Net-(C6-Pad1)",
       "+12V",
-      "Net-(#FLG07-pwr)",
+      "Net-(D1-K)",
       "Net-(U1-VS)",
-      "Net-(#FLG06-pwr)",
+      "Net-(D2-K)",
       "Net-(U2-VS)",
       "AMP_OUT",
       "OCTA_IN",
@@ -26,7 +26,7 @@
       "Net-(C20-Pad2)",
       "Net-(U8-+IN)",
       "-5V",
-      "Net-(#FLG08-pwr)",
+      "Net-(D3-A)",
       "unconnected-(J1-D--Pad2)",
       "unconnected-(J1-D+-Pad3)",
       "PWR_OK",
@@ -99,7 +99,7 @@
       "unconnected-(J6-Pad6)",
       "unconnected-(J9-Pad6)"
     ],
-    "high_contrast_mode": 1,
+    "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
