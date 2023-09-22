@@ -2657,7 +2657,7 @@
   (symbol (lib_id "power:GND") (at 65.532 106.934 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 59faa232-8611-471a-9288-0edba833aeab)
-    (property "Reference" "#PWR057" (at 65.532 113.284 0)
+    (property "Reference" "#PWR056" (at 65.532 113.284 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 65.532 112.014 0)
@@ -2673,7 +2673,7 @@
     (instances
       (project "FullSchematic"
         (path "/650f0e66-3493-4c97-9577-99f99fcd23df/e50c3662-2ba3-4758-a6bd-15efafbf9fc3"
-          (reference "#PWR057") (unit 1)
+          (reference "#PWR056") (unit 1)
         )
       )
       (project "Senior Design HMI Schematic R2 20230722_MB"
@@ -2857,7 +2857,7 @@
   (symbol (lib_id "power:+5V") (at 65.532 123.19 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6e3c3bc9-951a-4174-bd54-523d4ae476c8)
-    (property "Reference" "#PWR056" (at 65.532 127 0)
+    (property "Reference" "#PWR057" (at 65.532 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 66.04 119.634 0)
@@ -2873,7 +2873,7 @@
     (instances
       (project "FullSchematic"
         (path "/650f0e66-3493-4c97-9577-99f99fcd23df/e50c3662-2ba3-4758-a6bd-15efafbf9fc3"
-          (reference "#PWR056") (unit 1)
+          (reference "#PWR057") (unit 1)
         )
       )
       (project "Senior Design HMI Schematic R2 20230722_MB"
@@ -3404,7 +3404,7 @@
   (symbol (lib_id "Device:D_Zener") (at 31.242 70.866 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8d2a20f4-d45e-4e16-9a68-685461478724)
-    (property "Reference" "D3" (at 33.782 69.596 90)
+    (property "Reference" "D5" (at 33.782 69.596 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "SZMMSZ4679T1G" (at 33.782 72.136 90)
@@ -3427,7 +3427,7 @@
     (instances
       (project "FullSchematic"
         (path "/650f0e66-3493-4c97-9577-99f99fcd23df/e50c3662-2ba3-4758-a6bd-15efafbf9fc3"
-          (reference "D3") (unit 1)
+          (reference "D5") (unit 1)
         )
       )
     )
