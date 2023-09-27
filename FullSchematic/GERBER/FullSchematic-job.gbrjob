@@ -1,0 +1,169 @@
+{
+  "Header": {
+    "GenerationSoftware": {
+      "Vendor": "KiCad",
+      "Application": "Pcbnew",
+      "Version": "7.0.5"
+    },
+    "CreationDate": "2023-09-24T16:41:29-07:00"
+  },
+  "GeneralSpecs": {
+    "ProjectId": {
+      "Name": "FullSchematic",
+      "GUID": "46756c6c-5363-4686-956d-617469632e6b",
+      "Revision": "rev?"
+    },
+    "Size": {
+      "X": 155.1,
+      "Y": 136.1
+    },
+    "LayerNumber": 4,
+    "BoardThickness": 1.1842,
+    "Finish": "None"
+  },
+  "DesignRules": [
+    {
+      "Layers": "Outer",
+      "PadToPad": 0.09,
+      "PadToTrack": 0.09,
+      "TrackToTrack": 0.127,
+      "MinLineWidth": 0.25,
+      "TrackToRegion": 0.127,
+      "RegionToRegion": 0.127
+    },
+    {
+      "Layers": "Inner",
+      "PadToPad": 0.09,
+      "PadToTrack": 0.09,
+      "TrackToTrack": 0.127,
+      "TrackToRegion": 0.127,
+      "RegionToRegion": 0.127
+    }
+  ],
+  "FilesAttributes": [
+    {
+      "Path": "FullSchematic-F_Cu.gbr",
+      "FileFunction": "Copper,L1,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "FullSchematic-in1.gbr",
+      "FileFunction": "Copper,L2,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "FullSchematic-in2.gbr",
+      "FileFunction": "Copper,L3,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "FullSchematic-B_Cu.gbr",
+      "FileFunction": "Copper,L4,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "FullSchematic-F_Paste.gbr",
+      "FileFunction": "SolderPaste,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "FullSchematic-B_Paste.gbr",
+      "FileFunction": "SolderPaste,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "FullSchematic-F_Silkscreen.gbr",
+      "FileFunction": "Legend,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "FullSchematic-B_Silkscreen.gbr",
+      "FileFunction": "Legend,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "FullSchematic-F_Mask.gbr",
+      "FileFunction": "SolderMask,Top",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "FullSchematic-B_Mask.gbr",
+      "FileFunction": "SolderMask,Bot",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "FullSchematic-Edge_Cuts.gbr",
+      "FileFunction": "Profile",
+      "FilePolarity": "Positive"
+    }
+  ],
+  "MaterialStackup": [
+    {
+      "Type": "Legend",
+      "Name": "Top Silk Screen"
+    },
+    {
+      "Type": "SolderPaste",
+      "Name": "Top Solder Paste"
+    },
+    {
+      "Type": "SolderMask",
+      "Thickness": 0.01,
+      "Name": "Top Solder Mask"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "F.Cu"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.0994,
+      "Material": "FR4",
+      "Name": "F.Cu/in1",
+      "Notes": "Type: dielectric layer 1 (from F.Cu to in1)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.0152,
+      "Name": "in1"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.865,
+      "Material": "FR4",
+      "Name": "in1/in2",
+      "Notes": "Type: dielectric layer 2 (from in1 to in2)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.0152,
+      "Name": "in2"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.0994,
+      "Material": "FR4",
+      "Name": "in2/B.Cu",
+      "Notes": "Type: dielectric layer 3 (from in2 to B.Cu)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "B.Cu"
+    },
+    {
+      "Type": "SolderMask",
+      "Thickness": 0.01,
+      "Name": "Bottom Solder Mask"
+    },
+    {
+      "Type": "SolderPaste",
+      "Name": "Bottom Solder Paste"
+    },
+    {
+      "Type": "Legend",
+      "Name": "Bottom Silk Screen"
+    }
+  ]
+}

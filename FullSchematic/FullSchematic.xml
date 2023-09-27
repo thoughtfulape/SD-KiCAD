@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
+<<<<<<< Updated upstream
     <source>C:\Users\butle\Documents\Amplifier Schematic Collection\CombinedSchematic\FullSchematic_20230813\FullSchematic_20230813.kicad_sch</source>
     <date>8/18/2023 12:20:45 AM</date>
+=======
+    <source>C:\Users\butle\Documents\SchematicRepository\SD-KiCAD\FullSchematic\FullSchematic.kicad_sch</source>
+    <date>9/24/2023 4:29:10 PM</date>
+>>>>>>> Stashed changes
     <tool>Eeschema 7.0.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -584,6 +589,40 @@
       <sheetpath names="/Power Amplifier/" tstamps="/f9f03856-6747-4585-ae8a-ad2bb4f2bff9/"/>
       <tstamps>cf97ce27-97f0-4c62-8956-e1df4d0d4ff1</tstamps>
     </comp>
+    <comp ref="D3">
+      <value>MURS320T3G</value>
+      <footprint>Diode_SMD:D_SMC</footprint>
+      <fields>
+        <field name="MFG P/N">MURS320T3G</field>
+        <field name="SEL P/N">101-0125</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <property name="SEL P/N" value="101-0125"/>
+      <property name="MFG P/N" value="MURS320T3G"/>
+      <property name="Sheetname" value="Power Amplifier"/>
+      <property name="Sheetfile" value="AmplifierSchematic_20230805.kicad_sch"/>
+      <property name="ki_description" value="Diode"/>
+      <property name="ki_keywords" value="diode"/>
+      <sheetpath names="/Power Amplifier/" tstamps="/f9f03856-6747-4585-ae8a-ad2bb4f2bff9/"/>
+      <tstamps>86127ae5-62fb-47e0-8b0a-ff13e32aaebb</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>MURS320T3G</value>
+      <footprint>Diode_SMD:D_SMC</footprint>
+      <fields>
+        <field name="MFG P/N">MURS320T3G</field>
+        <field name="SEL P/N">101-0125</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <property name="SEL P/N" value="101-0125"/>
+      <property name="MFG P/N" value="MURS320T3G"/>
+      <property name="Sheetname" value="Power Amplifier"/>
+      <property name="Sheetfile" value="AmplifierSchematic_20230805.kicad_sch"/>
+      <property name="ki_description" value="Diode"/>
+      <property name="ki_keywords" value="diode"/>
+      <sheetpath names="/Power Amplifier/" tstamps="/f9f03856-6747-4585-ae8a-ad2bb4f2bff9/"/>
+      <tstamps>f7be2788-5960-4927-af89-581a82c723cd</tstamps>
+    </comp>
     <comp ref="L1">
       <value>10uH</value>
       <footprint>CustomFootprints:AGP2923-103KL</footprint>
@@ -721,6 +760,7 @@
       <tstamps>f986cd75-a725-4bca-8a1e-7afb24d00940</tstamps>
     </comp>
     <comp ref="TP1">
+<<<<<<< Updated upstream
       <value>TestPoint</value>
       <footprint>TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm</footprint>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
@@ -732,6 +772,8 @@
       <tstamps>bfc62f53-fa3f-47c3-ba43-7ceb9d05b3a1</tstamps>
     </comp>
     <comp ref="TP2">
+=======
+>>>>>>> Stashed changes
       <value>TestPoint</value>
       <footprint>TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm</footprint>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
@@ -742,6 +784,7 @@
       <sheetpath names="/Power Amplifier/" tstamps="/f9f03856-6747-4585-ae8a-ad2bb4f2bff9/"/>
       <tstamps>32d7dfd4-1906-4e29-bc65-ae259edd467a</tstamps>
     </comp>
+<<<<<<< Updated upstream
     <comp ref="TP3">
       <value>TestPoint</value>
       <footprint>TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm</footprint>
@@ -754,6 +797,9 @@
       <tstamps>244ea83c-aea8-4423-b5f9-932be7189e89</tstamps>
     </comp>
     <comp ref="TP4">
+=======
+    <comp ref="TP2">
+>>>>>>> Stashed changes
       <value>TestPoint</value>
       <footprint>TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm</footprint>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
@@ -764,7 +810,7 @@
       <sheetpath names="/Power Amplifier/" tstamps="/f9f03856-6747-4585-ae8a-ad2bb4f2bff9/"/>
       <tstamps>d6ad664a-8d83-4045-acae-57d53bc457b8</tstamps>
     </comp>
-    <comp ref="TP5">
+    <comp ref="TP3">
       <value>TestPoint</value>
       <footprint>TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm</footprint>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
@@ -775,7 +821,7 @@
       <sheetpath names="/Power Amplifier/" tstamps="/f9f03856-6747-4585-ae8a-ad2bb4f2bff9/"/>
       <tstamps>72ea4f20-b09a-468d-b795-6203cc7c232a</tstamps>
     </comp>
-    <comp ref="TP6">
+    <comp ref="TP4">
       <value>TestPoint</value>
       <footprint>TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm</footprint>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
@@ -786,7 +832,7 @@
       <sheetpath names="/Power Amplifier/" tstamps="/f9f03856-6747-4585-ae8a-ad2bb4f2bff9/"/>
       <tstamps>b7122f5b-5267-46f5-92bd-ceb885a4f081</tstamps>
     </comp>
-    <comp ref="TP7">
+    <comp ref="TP5">
       <value>TestPoint</value>
       <footprint>TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm</footprint>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
@@ -797,7 +843,7 @@
       <sheetpath names="/Power Amplifier/" tstamps="/f9f03856-6747-4585-ae8a-ad2bb4f2bff9/"/>
       <tstamps>85916376-32f4-431e-a985-c43b04c5d78c</tstamps>
     </comp>
-    <comp ref="TP8">
+    <comp ref="TP6">
       <value>TestPoint</value>
       <footprint>TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm</footprint>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
@@ -1387,7 +1433,7 @@
       <sheetpath names="/HMI_LCD1/" tstamps="/e50c3662-2ba3-4758-a6bd-15efafbf9fc3/"/>
       <tstamps>16b2b220-20ee-44cd-b1c2-4295f8f94281</tstamps>
     </comp>
-    <comp ref="D3">
+    <comp ref="D5">
       <value>SZMMSZ4679T1G</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <fields>
@@ -2222,8 +2268,15 @@ Banana Jack Connector Standard Banana Solder Red
       <node ref="C9" pin="1" pintype="passive"/>
       <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+<<<<<<< Updated upstream
       <node ref="J4" pin="10" pinfunction="+12V" pintype="power_out"/>
       <node ref="J4" pin="11" pinfunction="+12V" pintype="passive"/>
+=======
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J2" pin="10" pinfunction="+12V1" pintype="passive"/>
+      <node ref="J2" pin="11" pinfunction="+12V1" pintype="passive"/>
+>>>>>>> Stashed changes
       <node ref="U1" pin="5" pinfunction="VCC" pintype="power_in"/>
       <node ref="U2" pin="5" pinfunction="VCC" pintype="power_in"/>
       <node ref="U3" pin="" pinfunction="Drain" pintype="unspecified"/>
@@ -2304,6 +2357,7 @@ Banana Jack Connector Standard Banana Solder Red
       <node ref="C4" pin="2" pintype="passive"/>
       <node ref="C5" pin="2" pintype="passive"/>
       <node ref="C6" pin="2" pintype="passive"/>
+<<<<<<< Updated upstream
       <node ref="C9" pin="2" pintype="passive"/>
       <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="J1" pin="05" pinfunction="05" pintype="passive"/>
@@ -2321,6 +2375,26 @@ Banana Jack Connector Standard Banana Solder Red
       <node ref="J4" pin="5" pinfunction="GND" pintype="passive"/>
       <node ref="J4" pin="7" pinfunction="GND" pintype="passive"/>
       <node ref="J6" pin="05" pinfunction="05" pintype="passive"/>
+=======
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="GND" pintype="power_in"/>
+      <node ref="J1" pin="5" pinfunction="Shield" pintype="passive"/>
+      <node ref="J10" pin="1" pinfunction="VSS" pintype="power_in"/>
+      <node ref="J10" pin="15" pinfunction="LEDK" pintype="passive"/>
+      <node ref="J2" pin="15" pinfunction="COM" pintype="passive"/>
+      <node ref="J2" pin="17" pinfunction="COM" pintype="passive"/>
+      <node ref="J2" pin="18" pinfunction="COM" pintype="passive"/>
+      <node ref="J2" pin="19" pinfunction="COM" pintype="passive"/>
+      <node ref="J2" pin="24" pinfunction="COM" pintype="passive"/>
+      <node ref="J2" pin="3" pinfunction="COM" pintype="passive"/>
+      <node ref="J2" pin="5" pinfunction="COM" pintype="passive"/>
+      <node ref="J2" pin="7" pinfunction="COM" pintype="passive"/>
+      <node ref="J5" pin="11" pinfunction="11" pintype="passive"/>
+      <node ref="J5" pin="5" pinfunction="5" pintype="passive"/>
+      <node ref="J6" pin="10" pinfunction="10" pintype="passive"/>
+>>>>>>> Stashed changes
       <node ref="J6" pin="11" pinfunction="11" pintype="passive"/>
       <node ref="J7" pin="4" pinfunction="GND" pintype="power_in"/>
       <node ref="J8" pin="1" pinfunction="Pin_1" pintype="passive"/>
@@ -2360,10 +2434,36 @@ Banana Jack Connector Standard Banana Solder Red
       <node ref="U9" pin="4" pinfunction="GND" pintype="power_in"/>
       <node ref="U9" pin="5" pinfunction="DIR" pintype="input"/>
     </net>
+<<<<<<< Updated upstream
     <net code="14" name="INV">
       <node ref="J1" pin="07" pinfunction="07" pintype="passive"/>
       <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
+=======
+    <net code="9" name="CONTRAST">
+      <node ref="J10" pin="3" pinfunction="VO" pintype="power_in"/>
+      <node ref="RV1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="10" name="C_REF">
+      <node ref="J6" pin="9" pinfunction="9" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+    </net>
+    <net code="11" name="C_SENSE">
+      <node ref="J6" pin="7" pinfunction="7" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+    </net>
+    <net code="12" name="FAULT_N">
+      <node ref="J5" pin="9" pinfunction="9" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U7" pin="9" pinfunction="*FAULTB" pintype="output"/>
+    </net>
+    <net code="13" name="INV">
+      <node ref="J5" pin="7" pinfunction="7" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
+>>>>>>> Stashed changes
       <node ref="U1" pin="2" pinfunction="LIN" pintype="input"/>
       <node ref="U2" pin="1" pinfunction="HIN" pintype="input"/>
     </net>
@@ -2373,10 +2473,16 @@ Banana Jack Connector Standard Banana Solder Red
       <node ref="R31" pin="2" pintype="passive"/>
       <node ref="U14" pin="16" pinfunction="LEDA" pintype="passive"/>
     </net>
+<<<<<<< Updated upstream
     <net code="16" name="NON_INV">
       <node ref="J1" pin="08" pinfunction="08" pintype="passive"/>
       <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
+=======
+    <net code="15" name="NON_INV">
+      <node ref="J5" pin="8" pinfunction="8" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
+>>>>>>> Stashed changes
       <node ref="U1" pin="1" pinfunction="HIN" pintype="input"/>
       <node ref="U2" pin="2" pinfunction="LIN" pintype="input"/>
     </net>
@@ -2401,6 +2507,7 @@ Banana Jack Connector Standard Banana Solder Red
       <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="U2" pin="8" pinfunction="VB" pintype="power_in"/>
     </net>
+<<<<<<< Updated upstream
     <net code="21" name="Net-(D3-A)">
       <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="U10" pin="5" pinfunction="GND" pintype="power_in"/>
@@ -2520,6 +2627,12 @@ Banana Jack Connector Standard Banana Solder Red
     <net code="45" name="Net-(U1-VS)">
       <node ref="C7" pin="2" pintype="passive"/>
       <node ref="L3" pin="1" pinfunction="1" pintype="passive"/>
+=======
+    <net code="20" name="Net-(D3-A)">
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+>>>>>>> Stashed changes
       <node ref="U1" pin="6" pinfunction="VS" pintype="input"/>
       <node ref="U3" pin="2" pinfunction="Source" pintype="unspecified"/>
       <node ref="U3" pin="3" pinfunction="Source" pintype="unspecified"/>
@@ -2529,6 +2642,7 @@ Banana Jack Connector Standard Banana Solder Red
       <node ref="U4" pin="" pinfunction="Drain" pintype="unspecified"/>
       <node ref="U4" pin="4" pinfunction="Drain" pintype="unspecified"/>
     </net>
+<<<<<<< Updated upstream
     <net code="46" name="Net-(U2-HO)">
       <node ref="R8" pin="1" pintype="passive"/>
       <node ref="U2" pin="7" pinfunction="HO" pintype="output"/>
@@ -2539,6 +2653,11 @@ Banana Jack Connector Standard Banana Solder Red
     </net>
     <net code="48" name="Net-(U2-VS)">
       <node ref="C8" pin="2" pintype="passive"/>
+=======
+    <net code="21" name="Net-(D4-A)">
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+>>>>>>> Stashed changes
       <node ref="L2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="6" pinfunction="VS" pintype="input"/>
       <node ref="U5" pin="2" pinfunction="Source" pintype="unspecified"/>
@@ -2549,24 +2668,133 @@ Banana Jack Connector Standard Banana Solder Red
       <node ref="U6" pin="" pinfunction="Drain" pintype="unspecified"/>
       <node ref="U6" pin="4" pinfunction="Drain" pintype="unspecified"/>
     </net>
+<<<<<<< Updated upstream
     <net code="49" name="Net-(U3-Gate)">
+=======
+    <net code="22" name="Net-(D5-A)">
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U9" pin="5" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="23" name="Net-(J10-DB0)">
+      <node ref="J10" pin="7" pinfunction="DB0" pintype="bidirectional"/>
+      <node ref="U14" pin="15" pinfunction="QA" pintype="output"/>
+    </net>
+    <net code="24" name="Net-(J10-DB1)">
+      <node ref="J10" pin="8" pinfunction="DB1" pintype="bidirectional"/>
+      <node ref="U14" pin="1" pinfunction="QB" pintype="output"/>
+    </net>
+    <net code="25" name="Net-(J10-DB2)">
+      <node ref="J10" pin="9" pinfunction="DB2" pintype="bidirectional"/>
+      <node ref="U14" pin="2" pinfunction="QC" pintype="output"/>
+    </net>
+    <net code="26" name="Net-(J10-DB3)">
+      <node ref="J10" pin="10" pinfunction="DB3" pintype="bidirectional"/>
+      <node ref="U14" pin="3" pinfunction="QD" pintype="output"/>
+    </net>
+    <net code="27" name="Net-(J10-DB4)">
+      <node ref="J10" pin="11" pinfunction="DB4" pintype="bidirectional"/>
+      <node ref="U14" pin="4" pinfunction="QE" pintype="output"/>
+    </net>
+    <net code="28" name="Net-(J10-DB5)">
+      <node ref="J10" pin="12" pinfunction="DB5" pintype="bidirectional"/>
+      <node ref="U14" pin="5" pinfunction="QF" pintype="output"/>
+    </net>
+    <net code="29" name="Net-(J10-DB6)">
+      <node ref="J10" pin="13" pinfunction="DB6" pintype="bidirectional"/>
+      <node ref="U14" pin="6" pinfunction="QG" pintype="output"/>
+    </net>
+    <net code="30" name="Net-(J10-DB7)">
+      <node ref="J10" pin="14" pinfunction="DB7" pintype="bidirectional"/>
+      <node ref="U14" pin="7" pinfunction="QH" pintype="output"/>
+    </net>
+    <net code="31" name="Net-(J10-E)">
+      <node ref="J10" pin="6" pinfunction="E" pintype="input"/>
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="U13" pin="2" pinfunction="A1" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="Net-(J10-RS)">
+      <node ref="J10" pin="4" pinfunction="RS" pintype="input"/>
+      <node ref="U12" pin="2" pinfunction="A1" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="Net-(J10-R{slash}W)">
+      <node ref="J10" pin="5" pinfunction="R/W" pintype="input"/>
+      <node ref="U12" pin="3" pinfunction="A2" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="Net-(L1-Pad2)">
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="L3" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="35" name="Net-(L2-Pad2)">
+      <node ref="L2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="L4" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="36" name="Net-(Q2-S)">
+      <node ref="Q2" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+    </net>
+    <net code="37" name="Net-(Q3-B)">
+      <node ref="Q3" pin="2" pinfunction="B" pintype="input"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+    </net>
+    <net code="38" name="Net-(Q3-E)">
+      <node ref="Q3" pin="3" pinfunction="E" pintype="input"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="RV1" pin="3" pinfunction="3" pintype="passive"/>
+    </net>
+    <net code="39" name="Net-(SW1-2)">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="J6" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="4" pinfunction="2" pintype="unspecified"/>
+    </net>
+    <net code="40" name="Net-(SW1-4)">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="J6" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="3" pinfunction="4" pintype="unspecified"/>
+    </net>
+    <net code="41" name="Net-(SW1-8)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="J6" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="6" pinfunction="8" pintype="unspecified"/>
+    </net>
+    <net code="42" name="Net-(U1-HO)">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="HO" pintype="output"/>
+    </net>
+    <net code="43" name="Net-(U1-LO)">
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="LO" pintype="output"/>
+    </net>
+    <net code="44" name="Net-(U2-HO)">
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="HO" pintype="output"/>
+    </net>
+    <net code="45" name="Net-(U2-LO)">
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="LO" pintype="output"/>
+    </net>
+    <net code="46" name="Net-(U3-Gate)">
+>>>>>>> Stashed changes
       <node ref="R6" pin="2" pintype="passive"/>
-      <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U3" pin="1" pinfunction="Gate" pintype="input"/>
     </net>
     <net code="50" name="Net-(U4-Gate)">
       <node ref="R7" pin="2" pintype="passive"/>
-      <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U4" pin="1" pinfunction="Gate" pintype="input"/>
     </net>
     <net code="51" name="Net-(U5-Gate)">
       <node ref="R8" pin="2" pintype="passive"/>
-      <node ref="TP8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U5" pin="1" pinfunction="Gate" pintype="input"/>
     </net>
     <net code="52" name="Net-(U6-Gate)">
       <node ref="R9" pin="2" pintype="passive"/>
-      <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="1" pinfunction="Gate" pintype="input"/>
     </net>
     <net code="53" name="Net-(U7-VOUT)">

@@ -1,0 +1,41 @@
+Item,Designator,Comment,Footprint,JLCPCB Part #
+1,"C1, C2, C11, C12",100u,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,N/A
+2,"C3, C4, C5, C6, C19, C20, C21, C22, C23, C24, C25, C26, C27, C28, C29, C30, C31, C32, C33",.01u,Capacitor_SMD:C_0805_2012Metric,N/A
+3,"C7, C8",1u,Capacitor_SMD:C_1206_3216Metric,N/A
+4,"C9, C10",0.47u,Capacitor_SMD:C_1210_3225Metric,N/A
+5,"C13, C14, C15, C16, C17, C18",3.3u,CustomFootprints:B32522C0335J000,N/A
+6,"D1, D2, D3, D4",MURS320T3G,Diode_SMD:D_SMC,N/A
+7,D5,SZMMSZ4679T1G,Diode_SMD:D_SOD-123,N/A
+8,J1,USB_A,CustomFootprints:S_USB_006_M14.8x14.9,N/A
+9,J2,ATX-24,CustomFootprints:CONN_442060001_MOL,N/A
+10,J3,Red Banana Jack,CustomFootprints:CALTEST_CT3151-2,N/A
+11,J4,Black Banana Jack,CustomFootprints:CALTEST_CT3151-2,N/A
+12,"J5, J6, J9",2x6 Pin Header,CustomFootprints:PMOD,N/A
+13,"J7, J8",CT3151-2,CustomFootprints:CALTEST_CT3151-2,N/A
+14,J10,LCD_Conn,CustomFootprints:1-534237-4,N/A
+15,"L1, L2, L3, L4",10uH,CustomFootprints:AGP2923-103KL,N/A
+16,"Q1, Q2",BSS138-7-F,Package_TO_SOT_SMD:SOT-23,N/A
+17,Q3,NPN,Package_TO_SOT_SMD:TSOT-23,N/A
+18,"R1, R2, R3, R4, R5, R10, R13, R23",10k,Resistor_SMD:R_0201_0603Metric,N/A
+19,"R6, R7, R8, R9",10,Resistor_SMD:R_1210_3225Metric,N/A
+20,R11,33k,Resistor_SMD:R_0603_1608Metric,N/A
+21,R12,3.3k,Resistor_SMD:R_1210_3225Metric,N/A
+22,R14,20k,Resistor_SMD:R_1206_3216Metric,N/A
+23,"R15, R19, R22",1k,Resistor_SMD:R_0603_1608Metric,N/A
+24,"R16, R20",325,Resistor_SMD:R_0402_1005Metric,N/A
+25,"R17, R18",3.74k,Resistor_SMD:R_0402_1005Metric,N/A
+26,R21,3.1k,Resistor_SMD:R_1206_3216Metric,N/A
+27,"R24, R25",10,Resistor_SMD:R_1206_3216Metric,N/A
+28,RV1,1K,CustomFootprints:3386W-1-102RLF,N/A
+29,SW1,Rotary Switch,CustomFootprints:221AMC16R,N/A
+30,"TP1, TP2, TP3, TP4, TP5, TP6",TestPoint,TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm,N/A
+31,"U1, U2",IR2181STRPBF,CustomFootprints:IR2181,N/A
+32,U3,IPB009N03L G,CustomFootprints:IPB009N03L,N/A
+33,U4,IPB009N03L G,CustomFootprints:IPB009N03L,N/A
+34,U5,IPB009N03L G,CustomFootprints:IPB009N03L,N/A
+35,U6,IPB009N03L G,CustomFootprints:IPB009N03L,N/A
+36,U7,Current Sensor,CustomFootprints:MCA1101-20-5,N/A
+37,U8,Op Amp,CustomFootprints:LTC6240IS8TRMPBF,N/A
+38,U9,L79L05ABD13TR,CustomFootprints:L79L05ABD13TR,N/A
+39,"U10, U11, U12, U13",SN74LVC2T45DCURE4,CustomFootprints:SN74LVC2T45DCURE4,N/A
+40,U14,SN74LV595ARGYR,Package_DFN_QFN:DHVQFN-16-1EP_2.5x3.5mm_P0.5mm_EP1x2mm,N/A
